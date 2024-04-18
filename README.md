@@ -1,3 +1,4 @@
+## Fix 'pattern' mode on mac (perhaps works in other OSs as well)
 For those who want to use this now (instead of waiting for a proper fix - not sure if codetour is maintained any more):
 
 either clone this repo or clone codetour & apply the changes of this PR: https://github.com/microsoft/codetour/pull/298
