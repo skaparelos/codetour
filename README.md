@@ -1,9 +1,15 @@
 For those who want to use this now (instead of waiting for a proper fix - not sure if codetour is maintained any more):
+
 either clone this repo or clone codetour & apply the changes of this PR: https://github.com/microsoft/codetour/pull/298
+
 `npm i`
+
 uninstall the official codetour as we now need to install the one with change.
+
 Quit vscode and restart (to make sure everything is reset)
+
 `npm run package` this will produce a file named `codetour-0.0.59.vsix` in the repo
+
 Then run `code --install-extension codetour-0.0.59.vsix` to install
 
 ---
