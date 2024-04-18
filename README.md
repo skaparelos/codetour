@@ -1,5 +1,15 @@
+For those who want to use this now (instead of waiting for a proper fix - not sure if codetour is maintained any more):
+either clone this repo or clone codetour & apply the changes of this PR: https://github.com/microsoft/codetour/pull/298
+`npm i`
+uninstall the official codetour as we now need to install the one with change.
+Quit vscode and restart (to make sure everything is reset)
+`npm run package` this will produce a file named `codetour-0.0.59.vsix` in the repo
+Then run `code --install-extension codetour-0.0.59.vsix` to install
+
+---
+
 # CodeTour 🗺️
-ts
+
 CodeTour is a Visual Studio Code extension, which allows you to record and play back guided walkthroughs of your codebases. It's like a table of contents, that can make it easier to onboard (or re-board!) to a new project/feature area, visualize bug reports, or understand the context of a code review/PR change. A "code tour" is simply a series of interactive steps, each of which are associated with a specific directory, or file/line, and include a description of the respective code. This allows developers to clone a repo, and then immediately start **learning it**, without needing to refer to a `CONTRIBUTING.md` file and/or rely on help from others. Tours can either be checked into a repo, to enable sharing with other contributors, or [exported](#exporting-tours) to a "tour file", which allows anyone to replay the same tour, without having to clone any code to do it!
 
 <img width="800px" src="https://user-images.githubusercontent.com/116461/76165260-c6c00500-6112-11ea-9cda-0a6cb9b72e8f.gif" />
